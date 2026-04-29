@@ -28,7 +28,7 @@
 ### 安装
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Griffin-Peng/GraphRAG.git
 cd GraphRAG
 pip install -r requirements.txt
 ```
@@ -41,6 +41,8 @@ cp .env.example .env
 ```
 
 ### 构建知识库（首次使用）
+
+> 注意：KG_TTL 数据集和 hop_qa 评测集暂未公开，将在相关论文发表后发布。现有脚本逻辑完整，替换为自己的 TTL 文件即可使用。
 
 ```bash
 # 1. 解析 TTL 文件并导入 Neo4j
@@ -74,7 +76,7 @@ python graphrag.py
 
 ## 评测结果
 
-在 750 道 one-hop / two-hop / multi-hop 单选题上的准确率：
+在本地 750 道 one-hop / two-hop / multi-hop 单选题上的准确率（评测数据暂未公开）：
 
 | 方法 | One-Hop | Two-Hop | Multi-Hop |
 |------|---------|---------|-----------|
@@ -103,8 +105,8 @@ GraphRAG/
 ├── import_to_neo4j.py     # 三元组导入 Neo4j
 ├── build_vector_store.py  # 构建 ChromaDB 向量库
 ├── debug.py               # 检索调试工具
-├── KG_TTL/                # 200 篇论文的 TTL 知识图谱
-├── hop_qa/                # QA 评测数据集
+├── KG_TTL/                # [数据] 200 篇论文的 TTL 知识图谱（暂未公开）
+├── hop_qa/                # [数据] QA 评测数据集（暂未公开）
 ├── requirements.txt
 └── .env.example
 ```

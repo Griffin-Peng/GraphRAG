@@ -1,0 +1,38 @@
+# Environment variables (contains API keys & passwords)
+.env
+
+# Claude Code local settings
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+*.conda/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific - experimental data (not public)
+KG_TTL/
+hop_qa/
+chroma_db/
+*.log
+eval_results.json
+visualisation.png
+import_log.txt
+vector_log.txt
+
+# OS
+.DS_Store
+Thumbs.db

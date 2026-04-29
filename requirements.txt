@@ -1,0 +1,7 @@
+chromadb>=1.5.8
+neo4j>=6.1.0
+openai>=2.32.0
+python-dotenv>=1.2.2
+rdflib>=7.6.0
+sentence-transformers>=5.4.1
+streamlit>=1.56.0
